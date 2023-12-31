@@ -11,6 +11,9 @@ export default function FormValidator() {
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
 
+  const onSubmit = () => {
+    console.log("dont forget to display a message");
+  };
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <h2>Sign Up!</h2>
